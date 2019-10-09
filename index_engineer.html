@@ -1,23 +1,65 @@
-<!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
   <meta charset="utf-8">
-  <title>Engineering Information</title>
+  <title>Engineering</title>
 </head>
 <body>
-
-
-  <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-    <div class="btn-group mr-2" role="group" aria-label="First group">
-      <button type="button" class="btn btn-secondary"><a href="index.html">Home</a></button>
-      <button type="button" class="btn btn-secondary"><a href="index_product.html">Product</a></button>
-      <button type="button" class="btn btn-secondary"><a href="index_security.html"></a>Security</button>
-      <button type="button" class="btn btn-secondary"><a href="index_contact.html">Contact</a></button>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <a class="nav-link" href="index_product.html">Product</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index_engineer.html">Engineering</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index_security.html">Security</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index_contact.html">Contact<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+  <div class="jumbotron">
+    <h1>Engineering Information:</h1>
+    <h4>See below for information on software engineering education and career opertunitues in Portland.</h4>
+  </div>
+  <div class="row">
+    <div class="column">
+      <h3>Fundimentals of code</h3>
+      <ul>
+        <li>Coding is writing and formatting specific documents such that a computer or web browser can read them and do what they say.</li>
+        <li>Different languages exist under the umbrella of 'code' and each is used in some scenarios and not others. For example this program uses Javascript, useful becuase it is supported by every modern mainstream web browser.</li>
+        <li>One of the best skills for a new coder is learning how to find answers when you stuck, so for more information check out <a href="https://www.youtube.com/watch?v=3fyvJcSMrVw">this Lifehacker video.</a></li>
+        <li>Networking with others interested in writing code is also an important skill- as with learning any language it easier with a fluent speaker to guide you. In the Portland area try <a href="https://www.meetup.com/cities/us/or/portland/">Meetup</a> for events. </li>
+      </ul>
     </div>
-
-
-
-    <h1>Computer Science Degree</h1>
-
-  </body>
-  </html>
+    <div class="column">
+      <h3>Coding schools</h3>
+      <ul>
+        <li> <a href="https://www.epicodus.com"> Epicodus </a> provides a number of fast-paced 'boot camp' options the immerse you in three new languages over the course of five months.</li>
+        <li> <a href="https://learncodinganywhere.com/"> Portland Tech Academy</a> offers a wide array of fields of study.</li>
+        <li> <a href="https://pdxcodeguild.com/">pdxcodeguild</a> focuses on the student experience and a well rounded education.</li>
+        <li> <a href="https://www.pdx.edu/cecs/node/234"> Portland State University</a> also offers a coding program. </li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>Professional oppertunities</h3>
+        <ul>
+          <li>The network you've build while learning to code becomes helpful in finding the job you want in the coding community and many events through meetup and whichever code school you attend will give you chances to meet professionals in the field of your interest, or learn about a new field you hand't previously considered.</li>
+          <li>Having code skills does not negate the need for professionalism. Approach any job in coding as you would any job you really wanted: with a Resume, a collected appearance and respect for all parties involved. </li>
+          <li> A <a href="https://www.linkedin.com">LinkedIn</a> account is recomended as will as a portfolio of you better projects demonstrating whatever skill you feel most proficient in. </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
