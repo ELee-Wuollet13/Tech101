@@ -1,23 +1,63 @@
-<!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
   <meta charset="utf-8">
-  <title>Product Information</title>
+  <title>Product</title>
 </head>
 <body>
-
-
-  <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-    <div class="btn-group mr-2" role="group" aria-label="First group">
-      <button type="button" class="btn btn-secondary"><a href="index.html">Home</a></button>
-      <button type="button" class="btn btn-secondary"><a href="index_engineer.html">Engineering</a></button>
-      <button type="button" class="btn btn-secondary"><a href="index_security.html"></a>Security</button>
-      <button type="button" class="btn btn-secondary"><a href="index_contact.html">Contact</a></button>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <a class="nav-link" href="index_product.html">Product</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index_engineer.html">Engineering</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index_security.html">Security</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index_contact.html">Contact<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+  <div class="jumbotron">
+    <h1>Product Information:</h1>
+    <h4>See below for information on software marketing education and career opertunitues in Portland.</h4>
+  </div>
+  <div class="row">
+    <div class="column">
+      <h3>Marketing it Tech</h3>
+      <ul>
+        <li>'Product Code' is finished/manufactured product which is ready to be marketed for sale.</li>
+        <li>Creating and marketing code is mostly done in teams with each team working to see a need and fill a need either in existing or untapped markets.</li>
+        <li>Many programmers apply their skills recusrively to enhance thr power of others to better understand user needs or fill those needs quickly.</li>
+      </ul>
     </div>
-
-    <h1>Free Content and Resources</h1>
-    <h1>Paid Content and Resources</h1>
-    <h1>Portland Career Opportunities</h1>
-
-  </body>
-  </html>
+    <div class="column">
+      <h3>Advertising education</h3>
+      <ul>
+        <li> <a href="https://www.pdx.edu/sba/marketing-advertising-research"> Portland State University</a> offers classes on Marketing and Advertising.</li>
+        <li> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>Advertising oppertunities</h3>
+        <ul>
+          <li>a vast number of ad agencies operate in Portland, here are a few resources for choosing the ones that interest you most.</li>
+          <li> <a href="https://clutch.co/agencies/portland">Clutch.co</a> </li>
+          <li> <a href="https://upcity.com/local-marketing-agencies/lists/advertising-agencies-in-portland">Upcity.com.</a></li>
+          <li> <a href="https://agencylist.org/portland">agencylist.org.</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
