@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <title>Discover Form</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span></button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <a class="nav-link" href="index_product.html">Product</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="index_engineer.html">Engineering</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="index_security.html">Security</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="index_contact.html">Contact<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <h1>Discover a career in Technology!</h1>
+        <p>Fill out this survey to find your suggested tech career path.</p>
+      <div id="blanks">
+        <form>
+          <div class="form-group name">
+            <label class="control-label" for="inputName1">Enter your name</label>
+            <input placeholder="Name" type="text" class="form-control" id="name">
+          </div>
+          <div class="form-group education-level">
+            <label  for="education">Education Level</label>
+              <select class="form-control" id="education">
+                <option></option>
+                <option value="0">High School</option>
+                <option value="0">Some College</option>
+                <option value="2">Bachelor's Degree</option>
+                <option value="4">Master's Degree</option>
+                <option value="6">Certification</option>
+                <option value="8">Other</option>
+              </select>
+          </div>
+          <div class="form-group skill-level">
+            <label for="skill">Langauge Skill Level</label>
+              <select class="form-control" id="skill">
+                <option></option>
+                <option value="2">Beginner</option>
+                <option value="4">Intermediate</option>
+                <option value="6">Advanced</option>
+              </select>
+          </div>
+          <div class="form-group career-interest">
+            <label for="career">Career Interest</label>
+              <select class="form-control" id="career">
+                <option></option>
+                <option value="2">Product</option>
+                <option value="4">Engineering</option>
+                <option value="6">Security</option>
+              </select>
+          </div>
+          <div class="form-group career-change">
+            <label for="career-change">How many times did you change your mind about your career before you figured out what you really wanted to do?</label>
+              <select class="form-control" id="careerChange">
+                <option></option>
+                <option value="2">0</option>
+                <option value="4">1 - 2</option>
+                <option value="6">3 +</option>
+              </select>
+          </div>
+          <div class="form-group words" id="words">
+            <label for="words">Which of the following words best describe you?</label>
+            <p></p>
+            <input type="checkbox" name="words" value="0"> Passionate</br>
+            <input type="checkbox" name="words" value="2"> Assertive</br>
+            <input type="checkbox" name="words" value="4"> Thoughtful</br>
+            <input type="checkbox" name="words" value="6"> Logical</br>
+            <input type="checkbox" name="words" value="4"> Careless</br>
+            <input type="checkbox" name="words" value="4"> Analytical</br>
+            <input type="checkbox" name="words" value="6"> Empathetic</br>
+            <input type="checkbox" name="words" value="2"> Intuitive</br>
+            <input type="checkbox" name="words" value="4"> Agressive</br>
+            <input type="checkbox" name="words" value="6"> Dynamic</br>
+          </div>
+          <div class="form-group stress-level">
+            <label for="stress">How well do you handle stress?</label>
+              <select class="form-control" id="stressLevel">
+                <option></option>
+                <option value="2">Not so good</option>
+                <option value="4">Meh, I'm okay</option>
+                <option value="6">Stress is my fuel</option>
+              </select>
+          </div>
+
+          <button type="submit" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalCenter">Generate results</button>
+        </form>
+      </div>
+
+
+
+
+
+      <div class="container-results">
+        <div class="modal" tabindex="-1" role="dialog" id="exampleModalCenter">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Your results</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div id="result-product">
+                  <h1>Product</h1>
+                  <img src="img/pika.jpg" alt="An animated character with yellow fur, vampire vangs, and a cape" width="400" class="center">
+                    <p>You would thrive in Product!</p>
+                    <ul>
+                      <li>Know how to run good meetings</li>
+                      <li>Understand code</li>
+                      <li>Know how to sell (to engineers)</li>
+                      <li>Be able to support others</li>
+                      <li>Have a solid understanding of “street statistics”</li>
+                      <li>Take time to talk to customers</li>
+                      <li>Have a way with words</li>
+                      <li>Manage your time</li>
+                      <li>Know when to delegate</li>
+                      <li>Don't be ashamed to admit what you don't know</li>
+                    </ul>
+                    <p>Click <a href="index_product.html">here</a> for more information</p>
+                </div>
+                <div id="result-engineer">
+                  <h1>Engineering</h1>
+                  <img src="img/squir.jpg" alt="A blue animated turtle with mummy wraps" width="400" class="center">
+                    <p>You would thrive in Engineering!</p>
+                    <ul>
+                      <li>Analytical & problem solving skills</li>
+                      <li>Ability to learn quickly</li>
+                      <li>Team player</li>
+                      <li>Written and verbal communication</li>
+                      <li>Customer-oriented</li>
+                      <li>Analysis</li>
+                      <li>General programming skills</li>
+                      <li>Software debugging</li>
+                      <li>Software testing</li>
+                      <li>Software development fundamentals & process</li>
+                    </ul>
+                    <p>Click <a href="index_engineer.html">here</a> for more information</p>
+                </div>
+                <div id="result-security">
+                  <h1>Security</h1>
+                  <img src="img/char.jpg" alt="An orange animated dinosaur with a frankenstein costume" width="400" class="center">
+                  <p>You would thrive in Security!</p>
+                  <ul>
+                    <li>Enterprise firewall</li>
+                    <li>Communication skills</li>
+                    <li>Adaptability</li>
+                    <li>Problem-solving</li>
+                    <li>Thrive under pressure</li>
+                    <li>Strong multitaskers</li>
+                    <li>Well organized</li>
+                    <li>Research</li>
+                    <li>Team collaboration</li>
+                    <li>Innovative thinker</li>
+                  </ul>
+                  <p>Click <a href="index_security.html">here</a> for more information</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-warning" data-dismiss="modal">Learn More</button>
+                  <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

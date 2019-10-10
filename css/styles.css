@@ -4,7 +4,7 @@
  padding: 12px;
  background-color: #d0d1df;
  overflow: auto;
- color: white;
+ /* color: white; */
 }
 
 .panel {
@@ -12,7 +12,7 @@
   border: 8px #d0d1df;
   padding: 12px;
   background-color: #d0d1df;
-  color: white;
+  /* color: white; */
 }
 
 .menu-bar {
@@ -41,6 +41,10 @@ a:hover {
   background-color: white;
 }
 
+#result-product, #result-engineer, #result-security {
+  display: none;
+}
+
 .sub-header {
   color: #d0d1df;
   background-color: #4d95e1;
@@ -56,21 +60,31 @@ a:hover {
 .jumbotron {
   background-color: #d0d1df;
   margin-top: 35px;
-  color: white;
+  /* color: white; */
 }
 
 body {
   background-color: #4d95e1;
-  color: white;
+  /* color: white; */
 }
 
 .column {
   float: left;
   width: 33.33%;
-  color: white;
+  /* color: white; */
 }
 
-img {
+.modal-body {
+  text-align: center;
+  /* color: white; */
+  background-color: #4d95e1;
+}
+
+.modal-title {
+  color: #4d95e1;
+}
+
+.container {
   float: left;
   margin: 10px
   color: white;
@@ -88,6 +102,11 @@ img {
   .column {
     float: center;
     width: 70%;
-    color: white;
+    /* color: white; */
   }
+}
+
+ul {
+  list-style: none;
+  text-align: justify;
 }
