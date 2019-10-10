@@ -1,3 +1,20 @@
+.contact {
+ margin: 12px;
+ border: 8px #d0d1df;
+ padding: 12px;
+ background-color: #d0d1df
+}
+
+.panel {
+  margin: 12px;
+  border: 8px #d0d1df;
+  padding: 12px;
+  background-color: #d0d1df
+}
+
+body {
+background-color: #4d95e1
+
 .column {
   float: left;
   width: 33.33%;
